@@ -1,0 +1,54 @@
+.gameTitle, .firstTitle {
+    color: black;
+    font-size: 100px;
+    letter-spacing: 10px;
+}
+
+body {
+    background-image: url(../images/blue-abstract-simple-background-qs-2048x1152.jpg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-image: url(../images/wall.jpeg);
+}
+
+#firstContainer {
+    visibility: visible;
+    height: 100vh;
+    
+}
+
+#secondContainer {
+    visibility: hidden;
+    height: 100vh;
+}
+
+.choseQue, .choseCat, .choseSta {
+    color: black;
+    font-size: 30px;
+    background-color: azure;
+}
+
+.displayQuestion {
+    background-color: azure;
+}
+
+.colAnswer {
+    margin: 20px;
+    font-size: 20px;
+}
+
+p {
+    font-size: 30px;
+}
+
+.firstContainerButton, .secondContainerButton, .thirdContainerButton {
+    margin: 20px;
+}
+
+.firstContainerButton, .secondContainerButton {}
+
+h1 {
+    font-size: 80px;
+}

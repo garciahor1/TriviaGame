@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <div class="container text-center" id="firstContainer">
+        <div class="row">
+
+            <div class="col">
+
+                <div class="row ">
+                    <div class="col text-center firstTitle ">
+                        <h1>¿TRIVIA?</h1>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col choseCat text-left">
+                        <p>Chose a category: <button class="firstContainerButton"
+                                data-type="20">mythology</button><button class="firstContainerButton"
+                                data-type="21">sport</button><button class="firstContainerButton" data-type="18">science
+                                gadgets</button></p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col choseQue text-left">
+                        <p>Chose number of questions:
+                            <button class="secondContainerButton" value="5">5</button><button
+                                class="secondContainerButton" value="10">10</button><button
+                                class="secondContainerButton" value="20">20</button><button
+                                class="secondContainerButton" value="25">25</button></p>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col choseSta"><button class="thirdContainerButton" data-type="start">Start</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container" id="secondContainer">
+
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center gameTitle">¿TRIVIA?</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-center displayQuestion">Questions:</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col colAnswer text-center"><button class="answers displayAnswer0">A:</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col colAnswer text-center"><button class="answers displayAnswer1">B:</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col colAnswer text-center"><button class="answers displayAnswer2">C:</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col colAnswer text-center"><button class="answers displayAnswer3">D:</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>
+</body>
+
+</html>
