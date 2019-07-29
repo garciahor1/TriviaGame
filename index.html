@@ -26,80 +26,164 @@
 
     <div class="container text-center" id="firstContainer">
         <div class="row">
-
-            <div class="col">
-
-                <div class="row ">
-                    <div class="col text-center firstTitle ">
+            <dic class="col">
+                <div class="row">
+                    <div class="col">
                         <h1>¿TRIVIA?</h1>
                     </div>
-
                 </div>
 
-                <div class="row">
-                    <div class="col choseCat text-left">
-                        <p>Chose a category: <button class="firstContainerButton"
-                                data-type="20">mythology</button><button class="firstContainerButton"
-                                data-type="21">sport</button><button class="firstContainerButton" data-type="18">science
-                                gadgets</button></p>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <h3>Choose a category:</h3>
+                                    </h5>
+                                    <button class="firstContainerButton" data-type="20"
+                                        value="Mythology">mythology</button><button class="firstContainerButton"
+                                        data-type="21" value="Sports">sports</button><button class="firstContainerButton"
+                                        data-type="18" value="Science: Computers">Science: Computers</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        <h3>Choose number of questions:</h3>
+                                    </h5>
+                                    <button class="secondContainerButton" value="5">5</button><button
+                                        class="secondContainerButton" value="10">10</button><button
+                                        class="secondContainerButton" value="20">20</button><button
+                                        class="secondContainerButton" value="25">25</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
 
-                <div class="row">
-                    <div class="col choseQue text-left">
-                        <p>Chose number of questions:
-                            <button class="secondContainerButton" value="5">5</button><button
-                                class="secondContainerButton" value="10">10</button><button
-                                class="secondContainerButton" value="20">20</button><button
-                                class="secondContainerButton" value="25">25</button></p>
+
+                <div class="row" id="thirdElement">
+                    <div class="col">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="text-center">
+                                    <h2 id="displayDeff"></h2>
+                                </li>
+                                <li class="list-group-item">
+                                    <P>
+                                        <h3>category:</h3>
+                                    </P>
+                                    <p>
+                                        <h4 id="displayCategory"></h4>
+                                </li>
+                                <li class="list-group-item">
+                                    <P>
+                                        <h3>number of questions:</h3>
+                                    </P>
+                                    <p>
+                                        <h4 id="displayNOQ"></h4>
+                                </li>
+                                <li class="list-group-item">Good luck!</li>
+                                <button class="thirdContainerButton btn-primary" data-type="start">Start</button>
+                            </ul>
+                        </div>
                     </div>
-
                 </div>
-
-                <div class="row">
-                    <div class="col choseSta"><button class="thirdContainerButton" data-type="start">Start</button>
-                    </div>
-                </div>
-
-            </div>
+            </dic>
         </div>
     </div>
-
 
 
 
     <div class="container" id="secondContainer">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                        <li class="text-center">
+                            <h1 class="text-center gameTitle">¿TRIVIA?</h1>
+                        </li>
+                        <li>
+                            <p class="text-center " id="leftFormat">Time left: </p>
+                            <p class="text-center" id="displayTimer"> </p>
+                        </li>
+
+                        <li class="list-group-item">
+                            <p class="text-center displayQuestion">Questions:</p>
+                        </li>
+
+                        <div class="col text-center" id="answerButtons">
+
+                            <button type="button " class="btn btn-secondary answers" id="displayAnswer0"
+                                value="0"></button>
+                            <button type="button " class="btn btn-secondary answers" id="displayAnswer1"
+                                value="1"></button>
+                            <button type="button " class="btn btn-secondary answers" id="displayAnswer2"
+                                value="2"></button>
+                            <button type="button " class="btn btn-secondary answers" id="displayAnswer3"
+                                value="3"></button>
+                        </div>
+                        <button type="button" class="btn btn-primary" id="submitButton" value="5">Submit</button>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="container" id="thirdContainer">
 
         <div class="row">
             <div class="col">
-                <h1 class="text-center gameTitle">¿TRIVIA?</h1>
+                <div class="card">
+
+                    <div class="card-body">
+                        <h5 class="card-title text-center">
+                            <h2>
+                                How did you do you ask.
+                            </h2>
+                        </h5>
+                        <p class="card-text" id="cardTextThirdContainer"></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h4>Number of questions:</h4>
+                            <p id="numberOfQiestions"></p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Correct:</h4>
+                            <p id="correct"></p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Incorrect:</h4>
+                            <p id="incorrect"></p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Answered:</h4>
+                            <p id="answered"></p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Didn't answered:</h4>
+                            <p id="didntAnswer"></p>
+                        </li>
+                        <li class="list-group-item">
+                            <h4>Score:</h4>
+                            <p id="score"></p>
+                        </li>
+                    </ul>
+                    <div class="card-body">
+                        <button class="btn btn-primary" id="finished">New Game</button>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <p class="text-center displayQuestion">Questions:</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col colAnswer text-center"><button class="answers displayAnswer0">A:</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col colAnswer text-center"><button class="answers displayAnswer1">B:</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col colAnswer text-center"><button class="answers displayAnswer2">C:</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col colAnswer text-center"><button class="answers displayAnswer3">D:</button>
-            </div>
-        </div>
+
 
     </div>
-
     <script type="text/javascript" src="./assets/javascript/app.js"></script>
 </body>
 

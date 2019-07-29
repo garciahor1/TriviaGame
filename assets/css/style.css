@@ -14,13 +14,16 @@ body {
 }
 
 #firstContainer {
-    visibility: visible;
     height: 100vh;
-    
 }
 
 #secondContainer {
-    visibility: hidden;
+    display: none;
+    height: 100vh;
+}
+
+#thirdContainer {
+    display: none;
     height: 100vh;
 }
 
@@ -40,7 +43,7 @@ body {
 }
 
 p {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .firstContainerButton, .secondContainerButton, .thirdContainerButton {
@@ -51,4 +54,12 @@ p {
 
 h1 {
     font-size: 80px;
+}
+
+#thirdElement {
+    margin: 20px;
+}
+
+#displayAnswer0, #displayAnswer1, #displayAnswer2, #displayAnswer3 {
+    margin: 10px;
 }
